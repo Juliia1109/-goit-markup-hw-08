@@ -1,0 +1,42 @@
+
+
+    
+        // utils
+
+@import "./utils/vars";
+
+
+
+  
+       //  base
+  
+@import "./base/common";
+@import "./base/reset";
+@import "./base/container";
+
+
+
+
+    //  components
+
+@import "./components/navigation";
+@import "./components/buttons";
+@import "./components/modal";
+@import "./components/registration-form";
+@import "./components/socials";
+
+
+
+    //  layouts
+
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/feature";
+@import "./layouts/picture";
+@import "./layouts/work";
+@import "./layouts/aside";
+@import "./layouts/gallery";
+@import "./layouts/footer";
+
+
+

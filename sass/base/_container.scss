@@ -1,0 +1,33 @@
+.container {
+// 480px-mobile
+// 768px-tablet
+// 1200px-desktop
+
+
+      // mobile screen
+max-width: 480px;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
+
+
+outline: 2px solid red;
+outline-offset: -2px;
+
+
+// tablet screen
+@media screen and (min-width: 768px) {
+    max-width: 768px;   
+}
+
+// desctop screen
+
+
+@media screen and (min-width: 1200px) {
+    max-width: 1200px;   
+}
+ 
+}
+
+
