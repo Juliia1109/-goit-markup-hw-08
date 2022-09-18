@@ -8,6 +8,20 @@
 
 }
 
+.section__caption {
+    margin-bottom: 50px;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    @media screen and (max-width: 1199px) {
+        display: none; 
+    }
+
+}
 
 
 .picture__item {

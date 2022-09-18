@@ -5,7 +5,7 @@
     margin-right: auto;
     border: none;
     border-radius: 4px;
-    padding: 10px 32px;
+    padding: 10px 24px;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     font-weight: 700;
@@ -16,6 +16,10 @@
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+        padding: 10px 32px;
+      }
 
     &:hover,
     &:focus {

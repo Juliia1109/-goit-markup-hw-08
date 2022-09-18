@@ -1,5 +1,11 @@
 .header {
-    border-bottom: 1px solid var(--primary-whitegrey-color)
+    border-bottom: 1px solid var(--primary-whitegrey-color);
+    
+    @media  screen and (max-width: 767px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+   }
+
 }
 
 .header__container {

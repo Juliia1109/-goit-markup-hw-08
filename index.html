@@ -21,7 +21,7 @@
 <body>
 
                <!-- header -->
-<!-- 
+
     <header class="header">
         <div class="container header__container">
    
@@ -42,7 +42,7 @@
 
                 <li class="contacts__item">
                     <a href="mailto:info@devstudio.com" class="contacts__link">
-                        <svg class="contacts__icon" width="16" height="12">
+                        <svg class="contacts__icon envelope" width="14" height="10">
                         <use href="./images/icons.svg#envelopesvg"></use>
                         </svg>
                             info@devstudio.com
@@ -51,30 +51,38 @@
 
                 <li class="contacts__item">
                     <a href="tel:+380961111111" class="contacts__link">
-                        <svg class="contacts__icon" width="10" height="16">
+                        <svg class="contacts__icon smartphone" width="10" height="14">
                         <use href="./images/icons.svg#smartphonesvg"></use>
                         </svg>
                             +38 096 111 11 11
                     </a>
                 </li>
             </ul>
+
+    
+            <button class="mobile__btn js-open-menu" type="button"
+            aria-expanded="false" aria-controls="mobile-menu" >
+                <svg class="mobile__btn__icon" width="40" height="40">
+                    <use href="./images/icons.svg#menu"></use>
+                </svg>
+            </button>
         
         </div>
 
     </header>
- -->
+
 
 
     <main>
 
                <!-- hero -->
-<!-- 
+
         <section class="hero">
         <div class="container">
             <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
             <button type="button" data-modal-open class="hero__button">Замовити послугу</button>
         </div>
-        </section> -->
+        </section>
 
 
         <!-- Особливості -->
@@ -131,7 +139,7 @@
         <!-- Чим ми займаємося -->
         <section class="section">
         <div class="container">
-            <h2 class="section__title">Чим ми займаємося</h2>
+            <h2 class="section__caption">Чим ми займаємося</h2>
             <ul class="picture">
                 <li class="picture__item">
                     <img src="./images/picture/img1.jpg" alt="Картина з планшетом" width="370" />
@@ -152,12 +160,12 @@
         </section>
 
         <!-- Наша команда -->
-        <!-- <section class="section team">
+        <section class="section team section__work">
         <div class="container">
             <h2 class="section__title">Наша команда</h2>
             <ul class="work">
                 <li class="work__item">
-                    <img src="./images/work/img4.jpg" alt="Чоловік в темній сорочці" width="270" />
+                    <img src="./images/work/img4.jpg" alt="Чоловік в темній сорочці" />
                     <div class="socials">
                     <h3 class="socials__title">Ігор Дем'яненко</h3>
                     <p lang="en" class="socials__text">Product Designer</p>
@@ -202,7 +210,7 @@
                 </li>
                 
                 <li class="work__item">
-                    <img src="./images/work/img5.jpg" alt="Жінка з білим волоссям" width="270" />
+                    <img src="./images/work/img5.jpg" alt="Жінка з білим волоссям" />
                     <div class="socials">
                     <h3 class="socials__title">Ольга Рєпіна</h3>
                     <p lang="en" class="socials__text">Frontend Developer</p>
@@ -247,7 +255,7 @@
                 </li>
 
                 <li class="work__item">
-                    <img src="./images/work/img6.jpg" alt="Чоловік в світлій сорочці" width="270" />
+                    <img src="./images/work/img6.jpg" alt="Чоловік в світлій сорочці" />
                     <div class="socials">
                     <h3 class="socials__title">Микола Тарасов</h3>
                     <p lang="en" class="socials__text">Marketing</p>
@@ -292,7 +300,7 @@
                 </li>
 
                 <li class="work__item">
-                    <img src="./images/work/img7.jpg" alt="Чоловік в футболці" width="270" />
+                    <img src="./images/work/img7.jpg" alt="Чоловік в футболці" />
                     <div class="socials">
                     <h3 class="socials__title">Михайло Єрмаков</h3>
                     <p lang="en" class="socials__text">UI Designer</p>
@@ -337,10 +345,10 @@
                 </li>
             </ul>
         </div>
-        </section> -->
+        </section>
 
        <!-- Постійні клієнти -->
-       <!-- <section class="section">
+       <section class="section section__aside">
         <div class="container">
             <h2 class="section__title">Постійні клієнти</h2>
             <ul class="aside">
@@ -399,7 +407,7 @@
                 </li>
             </ul>
           </div>
-        </section> -->
+        </section>
 
     </main>
 
@@ -481,6 +489,7 @@
     </div>
     </footer> -->
 
+
      <!--  bacdrop+modal  -->
      <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -542,8 +551,61 @@
         </div>
     </div> -->
 
+
+     <!-- menu container -->
+
+     <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="mobile__btn menu-toggle js-close-menu">
+          <svg class="mobile__btn__icon"
+            width="24"
+            height="24"
+          >
+          <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+  
+        <ul class="mobile-nav">
+          <li class="mobile-nav-item"><a href="./index.html" class="mobile-nav-link mobile-nav-current">Студія</a></li>
+          <li class="mobile-nav-item"><a href="./portfolio.html" class="mobile-nav-link">Портфоліо</a></li>
+          <li class="mobile-nav-item"><a href="" class="mobile-nav-link">Контакти</a></li>
+        </ul>
+
+        <ul class="mobile-contacts">
+            <li class="mobile-contacts-item">
+                <a href="mailto:info@devstudio.com" class="mobile-contacts-link">
+                        info@devstudio.com
+                </a>
+            </li>
+
+            <li class="mobile-contacts-item">
+                <a href="tel:+380961111111" class="mobile-contacts-link">
+                        +38 096 111 11 11
+                </a>
+            </li>
+          </ul>
+
+          <ul class="mobile-socials">
+            <li class="mobile-socials-item"><a href="" class="mobile-socials-link">Instagram</a></li>
+            <li class="mobile-socials-line"></li>
+            <li class="mobile-socials-item"><a href="" class="mobile-socials-link">Twitter</a></li>
+            <li class="mobile-socials-line"></li>
+            <li class="mobile-socials-item"><a href="" class="mobile-socials-link">Facebook</a></li>
+            <li class="mobile-socials-line"></li>
+            <li class="mobile-socials-item"><a href="" class="mobile-socials-link">LinkedIn</a></li>
+          </ul>
+      </div>
+
+      <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+    ></script>
+
+
 <!-- scripts -->
-<script src="./js/modal.js"></script>
+<script  defer src="./js/modal.js"></script>
+<script  defer src="./js/mobile-menu.js"></script>
 
 </body>
 

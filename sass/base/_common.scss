@@ -10,19 +10,29 @@ body {
 .section {
     padding-bottom: 94px;
     padding-top: 94px;
+
+
+    @media screen and (max-width: 1199px) {
+         padding-bottom: 0px;
+         padding-top: 0px;
+      }
+
 }
 
 .section__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: var(--title-text-color);
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     letter-spacing: 0.03em;
     text-align: center;
+  
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17
+      }
 
-     @media screen and (max-width: 1199px) {
-        display: none; 
-    }
 
 }
