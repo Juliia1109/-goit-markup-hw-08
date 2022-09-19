@@ -1,32 +1,28 @@
 
 .team {
     background: var(--primary-secondary-color);
-
 }
 
 .section__work {
     @media screen and (max-width: 768px) {
         padding-top: 60px;
         padding-bottom: 30px;
-       }
+    }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         padding-top: 60px;
         padding-bottom: 30px;
-       }
-
-
-            @media screen and (min-width: 1200px) {
-        padding-bottom: 64px;
-       }
     }
 
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 64px;
+    }
+}
+
  .work {
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 
 .work__item {
@@ -38,16 +34,14 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-     
-    @media  screen and (min-width: 768px) and 
-    (max-width: 1199px) {
-        width: 354px;
-    }
+          @media  screen and (min-width: 768px) and 
+          (max-width: 1199px) {
+             width: 354px;
+         }
 
-    @media screen and (min-width: 1200px) {
-        width: 270px;
-      }
-    
+         @media screen and (min-width: 1200px) {
+             width: 270px;
+           }    
 }
 
 .socials{

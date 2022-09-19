@@ -17,7 +17,6 @@
        @media screen and (min-width: 1200px) {
         padding-top: 94px;
        }
-
 }
 
 
@@ -25,22 +24,19 @@
 .feature__list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
-
-    
+    margin: -15px;    
 }
 
 .feature__item {
     margin: 15px;
 
-    @media screen and (min-width: 768px) {
-     flex-basis: calc((100% - 60px) / 2);
-    }
+        @media screen and (min-width: 768px) {
+         flex-basis: calc((100% - 60px) / 2);
+        }
 
-    @media screen and (min-width: 1200px) {
-        flex-basis: calc((100% - 120px) / 4);
-       }
-        
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 120px) / 4);
+           }             
 }
 
 
@@ -72,9 +68,9 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    @media screen and (max-width:767px) {
-        text-align: center;
-    }
+         @media screen and (max-width:767px) {
+             text-align: center;
+         }
 }
 
 

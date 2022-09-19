@@ -2,10 +2,9 @@
     display: flex;
     gap: 30px;
   
-    @media screen and (max-width: 1199px) {
-        display: none; 
-    }
-
+       @media screen and (max-width: 1199px) {
+           display: none; 
+       }  
 }
 
 .section__caption {
@@ -17,10 +16,9 @@
     letter-spacing: 0.03em;
     text-align: center;
 
-    @media screen and (max-width: 1199px) {
-        display: none; 
-    }
-
+          @media screen and (max-width: 1199px) {
+              display: none; 
+          }
 }
 
 
@@ -40,7 +38,5 @@
     color: var(--primary-white-color);
     background-color: rgba(47, 48, 58, 0.8);
     text-align: center;
-
     display: none;
-
 }

@@ -7,30 +7,24 @@
 .container__footer {
     display: flex;
 
-   @media screen and (max-width: 767px) {
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-   flex-direction: column;
-   }
+               @media screen and (max-width: 767px) {
+                flex-wrap: wrap;
+                align-items: center;
+                align-content: center;
+               flex-direction: column;
+               }
 
-   @media screen and (min-width: 768px) and (max-width: 1199px)  {
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-around;
-   }
-
-    // @media screen and (min-width: 1200px) {
-    //     align-items: baseline;
-    //    }
-    
+               @media screen and (min-width: 768px) and (max-width: 1199px)  {
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: space-around;
+               }
 }
 
 .part {
     @media screen and (max-width: 1199px)  {
         text-align: center;
-       }
-   
+       }   
 }
 
 .address {
@@ -41,10 +35,9 @@
  .address__item {
     margin-bottom: 8px;
 
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 9px;
-       }
-    
+         @media screen and (min-width: 1200px) {
+             margin-bottom: 9px;
+            }   
 }
 
 .address__link {
@@ -60,8 +53,7 @@
             .address__list &:hover,
             .address__list &:focus {
                 color: var(--accent-color);
-            }
-    
+            }   
 }
 
 .info__link {
@@ -77,28 +69,25 @@
               .address__list &:focus {
               color: var(--accent-color);
              } 
-
 }
 
 
 .holder {
-   
     display: flex;
     flex-direction: column;
     
 
-    @media screen and (max-width: 767px) {
-        margin: 60px;
-    }
+           @media screen and (max-width: 767px) {
+              margin: 60px;
+           }
 
-    @media screen and (max-width: 1199px) {
-        align-items: center;
-    }
+           @media screen and (max-width: 1199px) {           
+               align-items: center;
+           }
 
-@media screen and (min-width: 1200px) {
-    margin-left: 70px;
-   }
-
+           @media screen and (min-width: 1200px) {
+               margin-left: 70px;
+              }
 }
 
 
@@ -137,7 +126,6 @@ font-weight: 700;
                  &:focus {
                      background-color: var(--accent-color);
                  }
-
 }
 
 .holder__icon {
@@ -153,13 +141,13 @@ font-weight: 700;
    flex-direction: column;
   
 
-   @media screen and (max-width: 1199px) {
-    align-items: center;
-   }
-
-    @media screen and (min-width: 1200px) {
-        margin-left: auto;
-       }
+        @media screen and (max-width: 1199px) {
+         align-items: center;
+        }
+     
+         @media screen and (min-width: 1200px) {
+          margin-left: auto;
+         }
    
 }
 
@@ -167,12 +155,10 @@ font-weight: 700;
 
     @media screen and (max-width: 1199px) {
         margin-bottom: 20px;
-       }
-
+    }
 }
 
 .box__title {
- 
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -181,24 +167,21 @@ font-weight: 700;
     text-transform: uppercase;
     color: var(--primary-white-color);
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-top: 60px;
-    }
-
+        }
 }
 
 .box__form {
      display: flex;
 
-     @media screen and (max-width: 1199px) { 
-     flex-direction: column;
-     }
+         @media screen and (max-width: 1199px) { 
+         flex-direction: column;
+         }
 
-     @media screen and (min-width: 1200px) {
+         @media screen and (min-width: 1200px) {
          align-items: center;
-
-       }
-   
+         }  
 }
 
 .box__input {
@@ -215,19 +198,17 @@ font-weight: 700;
     border-radius: 4px;  
     color: var(--primary-transparent-color);
 
-    @media screen and (min-width: 1200px) {
-        width: 358px;
-
-      }
-   
+           @media screen and (min-width: 1200px) {
+           width: 358px;
+           }   
 }
 
 .box__icon {
     margin-left: 12px;
 
-    @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1200px) {
         margin-left: 10px;
-      }
+        }
 }
 
 
