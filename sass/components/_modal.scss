@@ -21,12 +21,19 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 609px;
     padding: 40px;
     border-radius: 4px;
     background-color: var(--primary-white-color);
+
+    @media  screen and (min-width: 1200px) {
+        width: 528px;
+        min-height: 581px;
+   }
+
 }
+
 
 .modal__btn {
     position: absolute;

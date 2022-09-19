@@ -1,12 +1,12 @@
 
 .section__aside {
 
-    @media screen and(max-width: 768px) {
+    @media screen and (max-width: 768px) {
         padding-top: 60px;
         padding-bottom: 60px;
        }
 
-    @media screen and(min-width: 768px) and(max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         padding-top: 60px;
         padding-bottom: 60px;
        }
@@ -16,11 +16,26 @@
 
 
 
-// .aside {
-//     display: flex;
-//     gap: 30px;
-//     flex-direction: column;
-//     align-items: center;
+.aside {
+    display: flex;
+    @media screen and (max-width: 1199px) {
+      
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 30px;
+       }
+
+
+  
+       @media screen and (min-width: 1200px) {
+  
+        gap: 30px;
+        flex-direction: row-reverse;
+       }
+
+
+    
+    // align-items: center;
 
     
 

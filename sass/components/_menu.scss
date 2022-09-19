@@ -5,7 +5,7 @@
     margin-left: auto;
     padding: 0;
     
-
+     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,16 +62,10 @@
 
 .mobile-nav {
 margin-bottom: auto;
-//  width: 192px;
-//  height: 48px;
-//  margin-bottom: 306px;
+
 }
 
 .mobile-nav-link {
-// position: absolute;
-// display: block;
-// padding-top: 32px;
-// padding-bottom: 32px;
 color: #212121;
 font-weight: 500;
 font-size: 40px;
@@ -82,17 +76,7 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// .mobile-nav .mobile-nav-item:not(:last-child) {
-//     margin-bottom: 32px;
-// }
 
-// .mobile-nav-item {
-  
-// }
-
-// .mobile-contacts {
-
-// }
 
 .mobile-contacts-link {
 font-weight: 500;

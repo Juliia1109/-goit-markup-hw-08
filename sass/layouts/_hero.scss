@@ -26,8 +26,7 @@
 }
 
 .hero__title {
-    width: 360px;
-    height: 84px;
+    max-width: 360px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -40,8 +39,7 @@
     text-transform: uppercase;
 
     @media screen and (min-width: 1200px) {
-      width: 696px;
-      height: 120px;
+     max-width: 696px;
       font-size: 44px;  
       line-height: 1.36;
     }
