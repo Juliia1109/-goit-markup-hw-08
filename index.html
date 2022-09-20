@@ -142,17 +142,32 @@
             <h2 class="section__caption">Чим ми займаємося</h2>
             <ul class="picture">
                 <li class="picture__item">
-                    <img src="./images/picture/img1.jpg" alt="Картина з планшетом" width="370" />
+                    <img srcset="./images/picture/picture-1.jpg 1x, ./images/picture/picture-1@2x.jpg 2x" 
+                    src="./images/picture/picture-1.jpg" 
+                    alt="Картина з планшетом" 
+                    width="370" 
+                    height="294" 
+                    />
                     <p class="picture__text">Десктопні додатки</p>
                 </li>
 
                 <li class="picture__item">       
-                    <img src="./images/picture/img2.jpg" alt="Картина з телефоном та ноутбуком" width="370" />
+                    <img srcset="./images/picture/picture-2.jpg 1x, ./images/picture/picture-2@2x.jpg 2x" 
+                    src="./images/picture/picture-2.jpg" 
+                    alt="Картина з телефоном та ноутбуком" 
+                    width="370" 
+                    height="294" 
+                    />
                     <p class="picture__text">Мобільні додатки</p>
                 </li>
 
                 <li class="picture__item">
-                    <img src="./images/picture/img3.jpg" alt="Картина з планшетом у руках" width="370" />
+                    <img srcset="./images/picture/picture-3.jpg 1x, ./images/picture/picture-3@2x.jpg 2x" 
+                    src="./images/picture/picture-3.jpg" 
+                    alt="Картина з планшетом у руках" 
+                    width="370" 
+                    height="294" 
+                    />
                     <p class="picture__text">Дизайнерські рішення</p>
                 </li>
             </ul>
@@ -165,7 +180,43 @@
             <h2 class="section__title">Наша команда</h2>
             <ul class="work">
                 <li class="work__item">
-                    <img src="./images/work/img4.jpg" alt="Чоловік в темній сорочці" />
+                    <picture>
+
+                        <!-- desktop screen -->
+                        <source 
+                        media="(min-width: 1200px)" 
+                        srcset="
+                        ./images/work/work-1_desk.jpg 1x,
+                        ./images/work/work-1_desk@2x.jpg 2x
+                        " 
+                        />
+    
+                         <!-- tablet screen -->
+                         <source 
+                         media="(min-width: 768px)" 
+                         srcset="
+                        ./images/work/work-1_tab.jpg 1x,
+                        ./images/work/work-1_tab@2x.jpg 2x
+                         " 
+                         />
+    
+                          <!-- mobile screen -->
+                        <source 
+                        media="(max-width: 767px)" 
+                        srcset="
+                        ./images/work/work-1_mob.jpg 1x,
+                        ./images/work/work-1_mob@2x.jpg 2x
+                        " 
+                        />
+                        
+                        <img
+                         src="./images/work/work-1_mob.jpg" 
+                         alt="Чоловік в темній сорочці"
+                          width="450" 
+                          height="460"
+                          loading=lazy""
+                          />
+                    </picture>
                     <div class="socials">
                     <h3 class="socials__title">Ігор Дем'яненко</h3>
                     <p lang="en" class="socials__text">Product Designer</p>
@@ -210,7 +261,43 @@
                 </li>
                 
                 <li class="work__item">
-                    <img src="./images/work/img5.jpg" alt="Жінка з білим волоссям" />
+                    <picture>
+
+                        <!-- desktop screen -->
+                        <source 
+                        media="(min-width: 1200px)" 
+                        srcset="
+                        ./images/work/work-2_desk.jpg 1x,
+                        ./images/work/work-2_desk@2x.jpg 2x
+                        " 
+                        />
+    
+                         <!-- tablet screen -->
+                         <source 
+                         media="(min-width: 768px)" 
+                         srcset="
+                        ./images/work/work-2_tab.jpg 1x,
+                        ./images/work/work-2_tab@2x.jpg 2x
+                         " 
+                         />
+    
+                          <!-- mobile screen -->
+                        <source 
+                        media="(max-width: 767px)" 
+                        srcset="
+                        ./images/work/work-2_mob.jpg 1x,
+                        ./images/work/work-2_mob@2x.jpg 2x
+                        " 
+                        />
+                        
+                        <img
+                         src="./images/work/work-2_mob.jpg" 
+                         alt="Жінка з білим волоссям"
+                          width="450" 
+                          height="460"
+                          loading=lazy""
+                          />
+                    </picture>
                     <div class="socials">
                     <h3 class="socials__title">Ольга Рєпіна</h3>
                     <p lang="en" class="socials__text">Frontend Developer</p>
@@ -255,7 +342,43 @@
                 </li>
 
                 <li class="work__item">
-                    <img src="./images/work/img6.jpg" alt="Чоловік в світлій сорочці" />
+                    <picture>
+
+                        <!-- desktop screen -->
+                        <source 
+                        media="(min-width: 1200px)" 
+                        srcset="
+                        ./images/work/work-3_desk.jpg 1x,
+                        ./images/work/work-3_desk@2x.jpg 2x
+                        " 
+                        />
+    
+                         <!-- tablet screen -->
+                         <source 
+                         media="(min-width: 768px)" 
+                         srcset="
+                        ./images/work/work-3_tab.jpg 1x,
+                        ./images/work/work-3_tab@2x.jpg 2x
+                         " 
+                         />
+    
+                          <!-- mobile screen -->
+                        <source 
+                        media="(max-width: 767px)" 
+                        srcset="
+                        ./images/work/work-3_mob.jpg 1x,
+                        ./images/work/work-3_mob@2x.jpg 2x
+                        " 
+                        />
+                        
+                        <img
+                         src="./images/work/work-3_mob.jpg" 
+                         alt="Чоловік в світлій сорочці"
+                          width="450" 
+                          height="460"
+                          loading=lazy""
+                          />
+                    </picture>
                     <div class="socials">
                     <h3 class="socials__title">Микола Тарасов</h3>
                     <p lang="en" class="socials__text">Marketing</p>
@@ -300,7 +423,43 @@
                 </li>
 
                 <li class="work__item">
-                    <img src="./images/work/img7.jpg" alt="Чоловік в футболці" />
+                    <picture>
+
+                        <!-- desktop screen -->
+                        <source 
+                        media="(min-width: 1200px)" 
+                        srcset="
+                        ./images/work/work-4_desk.jpg 1x,
+                        ./images/work/work-4_desk@2x.jpg 2x
+                        " 
+                        />
+    
+                         <!-- tablet screen -->
+                         <source 
+                         media="(min-width: 768px)" 
+                         srcset="
+                        ./images/work/work-4_tab.jpg 1x,
+                        ./images/work/work-4_tab@2x.jpg 2x
+                         " 
+                         />
+    
+                          <!-- mobile screen -->
+                        <source 
+                        media="(max-width: 767px)" 
+                        srcset="
+                        ./images/work/work-4_mob.jpg 1x,
+                        ./images/work/work-4_mob@2x.jpg 2x
+                        " 
+                        />
+                        
+                        <img
+                         src="./images/work/work-4_mob.jpg" 
+                         alt="Чоловік в футболці"
+                          width="450" 
+                          height="460"
+                          loading=lazy""
+                          />
+                    </picture>
                     <div class="socials">
                     <h3 class="socials__title">Михайло Єрмаков</h3>
                     <p lang="en" class="socials__text">UI Designer</p>

@@ -92,12 +92,76 @@
             <li class="gallery__item">  
                 <a href="" class="gallery__link">
                 <div class="thumb">
-                    <img src="./images/gallery/img8.jpg" alt="Ноутбук" width="370" />
-                        <p class="desc"> 
-                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
-                            Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи 
-                            приватну особу.
-                        </p>
+                    <picture>
+
+                        <!-- desktop screen -->
+                        <source 
+                        media="(min-width: 1200px)" 
+                        srcset="
+                        ./images/gallery/gallery-1_desk.webp 1x,
+                        ./images/gallery/gallery-1_desk@2x.webp 2x
+                        " 
+                        type="image/webp"
+                        />
+                       
+                        <source 
+                        media="(min-width: 1200px)" 
+                        srcset="
+                        ./images/gallery/gallery-1_desk.jpg 1x,
+                        ./images/gallery/gallery-1_desk@2x.jpg 2x
+                        " 
+                        type="image/jpg"
+                        />
+    
+                         <!-- tablet screen -->
+                         <source 
+                        media="(min-width: 768px)" 
+                        srcset="
+                        ./images/gallery/gallery-1_tab.webp 1x,
+                        ./images/gallery/gallery-1_tab@2x.webp 2x
+                        " 
+                        type="image/webp"
+                        />
+                         <source 
+                         media="(min-width: 768px)" 
+                         srcset="
+                         ./images/gallery/gallery-1_tab.jpg 1x,
+                         ./images/gallery/gallery-1_tab@2x.jpg 2x
+                         " 
+                         type="image/jpg"
+                         />
+    
+                          <!-- mobile screen -->
+                        <source 
+                        media="(max-width: 767px)" 
+                        srcset="
+                        ./images/gallery/gallery-1_mob.webp 1x,
+                        ./images/gallery/gallery-1_mob@2x.webp 2x
+                        " 
+                        type="image/webp"
+                        />
+                        <source 
+                        media="(max-width: 767px)" 
+                        srcset="
+                        ./images/gallery/gallery-1_mob.jpg 1x,
+                        ./images/gallery/gallery-1_mob@2x.jpg 2x
+                        " 
+                        type="image/jpg"
+                        />
+                        
+                        <img
+                         src="./images/gallery/gallery-1_mob.jpg" 
+                         alt="Ноутбук"
+                          width="450" 
+                          height="294"
+                          loading="lazy"
+                          />
+                    </picture>
+                    <p class="desc"> 
+                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
+                        Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи 
+                        приватну особу.
+                    </p>
                 </div>
                             <div class="gallery__aside">
                                 <h2 class="gallery__title">Технокряк</h2>
@@ -109,7 +173,43 @@
             <li class="gallery__item">
                 <a href="" class="gallery__link">
                 <div class="thumb">
-                    <img src="./images/gallery/img9.jpg" alt="Баскетболісти" width="370" />
+                        <picture>
+
+                            <!-- desktop screen -->
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="
+                            ./images/gallery/gallery-2_desk.jpg 1x,
+                            ./images/gallery/gallery-2_desk@2x.jpg 2x
+                            " 
+                            />
+        
+                             <!-- tablet screen -->
+                             <source 
+                             media="(min-width: 768px)" 
+                             srcset="
+                             ./images/gallery/gallery-2_tab.jpg 1x,
+                             ./images/gallery/gallery-2_tab@2x.jpg 2x
+                             " 
+                             />
+        
+                              <!-- mobile screen -->
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="
+                            ./images/gallery/gallery-2_mob.jpg 1x,
+                            ./images/gallery/gallery-2_mob@2x.jpg 2x
+                            " 
+                            />
+                            
+                            <img
+                             src="./images/gallery/gallery-2_mob.jpg" 
+                             alt="Баскетболісти"
+                              width="450" 
+                              height="294"
+                              loading=lazy""
+                              />
+                        </picture>
                         <p class="desc"> 
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                             Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи 
@@ -126,7 +226,43 @@
             <li class="gallery__item">
                 <a href="" class="gallery__link">
                 <div class="thumb">
-                    <img src="./images/gallery/img10.jpg" alt="Риба" width="370" />
+                        <picture>
+
+                            <!-- desktop screen -->
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="
+                            ./images/gallery/gallery-3_desk.jpg 1x,
+                            ./images/gallery/gallery-3_desk@2x.jpg 2x
+                            " 
+                            />
+        
+                             <!-- tablet screen -->
+                             <source 
+                             media="(min-width: 768px)" 
+                             srcset="
+                             ./images/gallery/gallery-3_tab.jpg 1x,
+                             ./images/gallery/gallery-3_tab@2x.jpg 2x
+                             " 
+                             />
+        
+                              <!-- mobile screen -->
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="
+                            ./images/gallery/gallery-3_mob.jpg 1x,
+                            ./images/gallery/gallery-3_mob@2x.jpg 2x
+                            " 
+                            />
+                            
+                            <img
+                             src="./images/gallery/gallery-3_mob.jpg" 
+                             alt="Риба"
+                              width="450" 
+                              height="294"
+                              loading=lazy""
+                              />
+                        </picture>
                         <p class="desc"> 
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                             Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи 
@@ -143,7 +279,43 @@
             <li class="gallery__item">
                 <a href="" class="gallery__link">
                 <div class="thumb">
-                    <img src="./images/gallery/img11.jpg" alt="Навушники" width="370" />
+                        <picture>
+
+                            <!-- desktop screen -->
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="
+                            ./images/gallery/gallery-4_desk.jpg 1x,
+                            ./images/gallery/gallery-4_desk@2x.jpg 2x
+                            " 
+                            />
+        
+                             <!-- tablet screen -->
+                             <source 
+                             media="(min-width: 768px)" 
+                             srcset="
+                             ./images/gallery/gallery-4_tab.jpg 1x,
+                             ./images/gallery/gallery-4_tab@2x.jpg 2x
+                             " 
+                             />
+        
+                              <!-- mobile screen -->
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="
+                            ./images/gallery/gallery-4_mob.jpg 1x,
+                            ./images/gallery/gallery-4_mob@2x.jpg 2x
+                            " 
+                            />
+                            
+                            <img
+                             src="./images/gallery/gallery-4_mob.jpg" 
+                             alt="Навушники"
+                              width="450" 
+                              height="294"
+                              loading=lazy""
+                              />
+                        </picture>
                         <p class="desc"> 
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                             Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи 
@@ -160,7 +332,43 @@
             <li class="gallery__item">
                 <a href="" class="gallery__link">
                 <div class="thumb">
-                    <img src="./images/gallery/img12.jpg" alt="Коробочки" width="370" />
+                        <picture>
+
+                            <!-- desktop screen -->
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="
+                            ./images/gallery/gallery-5_desk.jpg 1x,
+                            ./images/gallery/gallery-5_desk@2x.jpg 2x
+                            " 
+                            />
+        
+                             <!-- tablet screen -->
+                             <source 
+                             media="(min-width: 768px)" 
+                             srcset="
+                             ./images/gallery/gallery-5_tab.jpg 1x,
+                             ./images/gallery/gallery-5_tab@2x.jpg 2x
+                             " 
+                             />
+        
+                              <!-- mobile screen -->
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="
+                            ./images/gallery/gallery-5_mob.jpg 1x,
+                            ./images/gallery/gallery-5_mob@2x.jpg 2x
+                            " 
+                            />
+                            
+                            <img
+                             src="./images/gallery/gallery-5_mob.jpg" 
+                             alt="Коробочки"
+                              width="450" 
+                              height="294"
+                              loading=lazy""
+                              />
+                        </picture>
                         <p class="desc"> 
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                             Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи 
@@ -177,7 +385,43 @@
             <li class="gallery__item">
                 <a href="" class="gallery__link">
                 <div class="thumb">
-                    <img src="./images/gallery/img13.jpg" alt="Монітор" width="370" />
+                        <picture>
+
+                            <!-- desktop screen -->
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="
+                            ./images/gallery/gallery-6_desk.jpg 1x,
+                            ./images/gallery/gallery-6_desk@2x.jpg 2x
+                            " 
+                            />
+        
+                             <!-- tablet screen -->
+                             <source 
+                             media="(min-width: 768px)" 
+                             srcset="
+                             ./images/gallery/gallery-6_tab.jpg 1x,
+                             ./images/gallery/gallery-6_tab@2x.jpg 2x
+                             " 
+                             />
+        
+                              <!-- mobile screen -->
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="
+                            ./images/gallery/gallery-6_mob.jpg 1x,
+                            ./images/gallery/gallery-6_mob@2x.jpg 2x
+                            " 
+                            />
+                            
+                            <img
+                             src="./images/gallery/gallery-6_mob.jpg" 
+                             alt="Монітор"
+                              width="450" 
+                              height="294"
+                              loading=lazy""
+                              />
+                        </picture>
                         <p class="desc"> 
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                             Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи 
@@ -194,12 +438,48 @@
             <li class="gallery__item">
                 <a href="" class="gallery__link">
                 <div class="thumb">
-                    <img src="./images/gallery/img14.jpg" alt="Журнал" width="370" />
+                        </p>
+                        <picture>
+
+                            <!-- desktop screen -->
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="
+                            ./images/gallery/gallery-7_desk.jpg 1x,
+                            ./images/gallery/gallery-7_desk@2x.jpg 2x
+                            " 
+                            />
+        
+                             <!-- tablet screen -->
+                             <source 
+                             media="(min-width: 768px)" 
+                             srcset="
+                             ./images/gallery/gallery-7_tab.jpg 1x,
+                             ./images/gallery/gallery-7_tab@2x.jpg 2x
+                             " 
+                             />
+        
+                              <!-- mobile screen -->
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="
+                            ./images/gallery/gallery-7_mob.jpg 1x,
+                            ./images/gallery/gallery-7_mob@2x.jpg 2x
+                            " 
+                            />
+                            
+                            <img
+                             src="./images/gallery/gallery-7_mob.jpg" 
+                             alt="Журнал"
+                              width="450" 
+                              height="294"
+                              loading=lazy""
+                              />
+                        </picture>
                         <p class="desc"> 
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                             Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи 
                             приватну особу.
-                        </p>
                 </div>
                             <div class="gallery__aside">
                                 <h2 class="gallery__title">Видання <span lang="en">Edition</span></h2>
@@ -211,7 +491,43 @@
             <li class="gallery__item">
                 <a href="" class="gallery__link">
                 <div class="thumb">
-                    <img src="./images/gallery/img15.jpg" alt="Бейджик" width="370" />
+                        <picture>
+
+                            <!-- desktop screen -->
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="
+                            ./images/gallery/gallery-8_desk.jpg 1x,
+                            ./images/gallery/gallery-8_desk@2x.jpg 2x
+                            " 
+                            />
+        
+                             <!-- tablet screen -->
+                             <source 
+                             media="(min-width: 768px)" 
+                             srcset="
+                             ./images/gallery/gallery-8_tab.jpg 1x,
+                             ./images/gallery/gallery-8_tab@2x.jpg 2x
+                             " 
+                             />
+        
+                              <!-- mobile screen -->
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="
+                            ./images/gallery/gallery-8_mob.jpg 1x,
+                            ./images/gallery/gallery-8_mob@2x.jpg 2x
+                            " 
+                            />
+                            
+                            <img
+                             src="./images/gallery/gallery-8_mob.jpg" 
+                             alt="Бейджик"
+                              width="450" 
+                              height="294"
+                              loading=lazy""
+                              />
+                        </picture>
                         <p class="desc"> 
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                             Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи 
@@ -228,7 +544,43 @@
             <li class="gallery__item">
                 <a href="" class="gallery__link">
                 <div class="thumb">
-                    <img src="./images/gallery/img16.jpg" alt="Нетбук" width="370" />
+                        <picture>
+
+                            <!-- desktop screen -->
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="
+                            ./images/gallery/gallery-9_desk.jpg 1x,
+                            ./images/gallery/gallery-9_desk@2x.jpg 2x
+                            " 
+                            />
+        
+                             <!-- tablet screen -->
+                             <source 
+                             media="(min-width: 768px)" 
+                             srcset="
+                             ./images/gallery/gallery-9_tab.jpg 1x,
+                             ./images/gallery/gallery-9_tab@2x.jpg 2x
+                             " 
+                             />
+        
+                              <!-- mobile screen -->
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="
+                            ./images/gallery/gallery-9_mob.jpg 1x,
+                            ./images/gallery/gallery-9_mob@2x.jpg 2x
+                            " 
+                            />
+                            
+                            <img
+                             src="./images/gallery/gallery-9_mob.jpg" 
+                             alt="Нетбук"
+                              width="450" 
+                              height="294"
+                              loading=lazy""
+                              />
+                        </picture>
                         <p class="desc"> 
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                             Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи 

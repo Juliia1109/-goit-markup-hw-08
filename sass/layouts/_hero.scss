@@ -1,21 +1,52 @@
 
-.hero {
+.hero { 
+    @include section(118px 118px);
+
+    background-color: var(--primary-background-color);
+
     padding-top: 118px;
     padding-bottom: 118px;
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--primary-background-color);
-    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/img17.jpg);
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    //    mobile screen
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/hero_mob.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/hero_mob@2x.jpg);
+    }
+
+
+    //    tablet screen
+    @media  screen and (min-width: 481px) {
+        background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/hero_tab.jpg);
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/hero_tab@2x.jpg);
+    }
+}
+
+
+    //    desktop screen
+    @include section(200px 200px);
+
+    @media  screen and (min-width: 769px) {
+        background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/hero_desk.jpg);
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/hero_desk@2x.jpg);
+    }
+}
 
            @media  screen and (min-width: 768px) and 
            (max-width: 1199px) {
                max-width: 768px;
            }
-
 
           @media screen and (min-width: 1200px) {
               padding-top: 200px;
