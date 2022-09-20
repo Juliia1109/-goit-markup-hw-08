@@ -1654,7 +1654,7 @@ textarea {
 }
 
 .box__title {
-  margin-bottom: 50pt;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1662,7 +1662,7 @@ textarea {
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .box__title {
     text-align: center;
   }

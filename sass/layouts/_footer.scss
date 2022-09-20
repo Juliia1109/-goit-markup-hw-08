@@ -177,14 +177,15 @@ margin: auto;
 }
 
 .box__title {
-  margin-bottom: 50pt;
+  margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--primary-white-color);   
-     @media screen and (max-width: 767px) {
+    color: var(--primary-white-color); 
+
+      @media screen and (max-width: 1199px) {
        text-align: center;
      }
 }
