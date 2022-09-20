@@ -1,6 +1,6 @@
 
 .hero { 
-    @include section(118px 118px);
+
 
     background-color: var(--primary-background-color);
 
@@ -33,7 +33,7 @@
 
 
     //    desktop screen
-    @include section(200px 200px);
+
 
     @media  screen and (min-width: 769px) {
         background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/hero_desk.jpg);

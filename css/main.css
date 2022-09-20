@@ -1465,7 +1465,19 @@ textarea {
         justify-content: space-around;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container__footer {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .part {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .part {
     text-align: center;
@@ -1530,7 +1542,8 @@ textarea {
 }
 @media screen and (max-width: 767px) {
   .holder {
-    margin: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -1613,6 +1626,11 @@ textarea {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (max-width: 767px) {
+  .box {
+    display: block;
+  }
+}
 @media screen and (max-width: 1199px) {
   .box {
     -webkit-box-align: center;
@@ -1626,6 +1644,9 @@ textarea {
   }
 }
 
+.box__label {
+  margin: auto;
+}
 @media screen and (max-width: 1199px) {
   .box__label {
     margin-bottom: 20px;
@@ -1637,16 +1658,11 @@ textarea {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .box__title {
-    margin-top: 60px;
-  }
-}
-
 .box__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1669,6 +1685,7 @@ textarea {
 }
 
 .box__input {
+  display: block;
   padding-left: 16px;
   padding-right: 16px;
   font-size: 16px;

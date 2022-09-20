@@ -14,14 +14,23 @@
                flex-direction: column;
                }
 
-               @media screen and (min-width: 768px) and (max-width: 1199px)  {
+               @media screen and (min-width: 768px) and (max-width: 1199px) {
                 flex-wrap: wrap;
                 align-items: flex-start;
                 justify-content: space-around;
                }
+
+               @media screen and (min-width: 1200px) {
+                align-items: baseline;
+               }
 }
 
 .part {
+    @media screen and (min-width: 768px) and (max-width: 1199px)  {
+        margin-bottom: 60px;
+       }   
+
+  
     @media screen and (max-width: 1199px)  {
         text-align: center;
        }   
@@ -75,14 +84,19 @@
 .holder {
     display: flex;
     flex-direction: column;
+
     
 
            @media screen and (max-width: 767px) {
-              margin: 60px;
+              margin-top: 60px;
+              margin-bottom: 60px;
+              
+              
            }
 
            @media screen and (max-width: 1199px) {           
                align-items: center;
+            
            }
 
            @media screen and (min-width: 1200px) {
@@ -139,10 +153,14 @@ font-weight: 700;
 .box {
    display: flex;
    flex-direction: column;
-  
+                @media screen and (max-width: 767px) {
+               display: block;
+
+               }
 
         @media screen and (max-width: 1199px) {
          align-items: center;
+    
         }
      
          @media screen and (min-width: 1200px) {
@@ -152,7 +170,7 @@ font-weight: 700;
 }
 
 .box__label {
-
+margin: auto;
     @media screen and (max-width: 1199px) {
         margin-bottom: 20px;
     }
@@ -163,12 +181,13 @@ font-weight: 700;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-white-color);
 
         @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-top: 60px;
+        // margin-top: 60px;
         }
 }
 
@@ -185,6 +204,7 @@ font-weight: 700;
 }
 
 .box__input {
+    display: block;
     padding-left: 16px;
     padding-right: 16px;
     font-size: 16px;
@@ -197,7 +217,13 @@ font-weight: 700;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;  
     color: var(--primary-transparent-color);
-
+           
+            //  @media screen and (max-width: 1199px) {
+            //     display: block;
+            //     width: 100%;
+            //     max-width: 450px;
+            //  }   
+        
            @media screen and (min-width: 1200px) {
            width: 358px;
            }   
