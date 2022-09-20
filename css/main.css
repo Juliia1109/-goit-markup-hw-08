@@ -1654,15 +1654,20 @@ textarea {
 }
 
 .box__title {
-  margin-bottom: 20px;
+  margin-bottom: 50pt;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
+@media screen and (max-width: 767px) {
+  .box__title {
+    text-align: center;
+  }
+}
+
 .box__form {
   display: -webkit-box;
   display: -ms-flexbox;

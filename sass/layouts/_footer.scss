@@ -177,19 +177,18 @@ margin: auto;
 }
 
 .box__title {
-    margin-bottom: 20px;
+  margin-bottom: 50pt;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--primary-white-color);
-
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-        // margin-top: 60px;
-        }
+    color: var(--primary-white-color);   
+     @media screen and (max-width: 767px) {
+       text-align: center;
+     }
 }
+
 
 .box__form {
      display: flex;
@@ -205,7 +204,7 @@ margin: auto;
 
 .box__input {
     display: block;
-    padding-left: 16px;
+    padding-left: 16px; 
     padding-right: 16px;
     font-size: 16px;
     line-height: 1.25;
