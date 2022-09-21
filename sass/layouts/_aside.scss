@@ -16,17 +16,11 @@
 
 .aside {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 
-    @media screen and (max-width: 1199px) {
-        flex-wrap: wrap;
-        flex-direction: row;
-        gap: 30px;
-       }
 
-       @media screen and (min-width: 1200px) {
-        gap: 30px;
-        flex-direction: row-reverse;
-       }
 
          & .aside__link:focus,
          & .aside__link:hover {

@@ -72,7 +72,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .mobile-contacts-link {
 font-weight: 500;
-font-size: 34px;
+font-size: 24px;
 line-height: 1.18;
 letter-spacing: 0.02em;
 color: #757575;
@@ -81,7 +81,12 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-contacts-item {
+.mobile-contacts-link.accent {
+    color: #2196F3;
+    font-size: 34px;
+}
+
+.mobile-contacts-item:not(:last-child) {
  margin-bottom: 32px;
 }
 
@@ -95,6 +100,7 @@ color: #2196F3;
 
 .mobile-socials {
    display: flex;
+   flex-wrap: wrap;
    margin-top: 64px;
 }
 
@@ -111,10 +117,10 @@ margin-left: 10px;
 }
 
 .mobile-socials-line {
-    display: block;
-    width: 1px;
-    height: 22px;
-    background-color:  rgba(33, 33, 33, 0.2);
+    // display: block;
+    // width: 1px;
+    // height: 22px;
+    // background-color:  rgba(33, 33, 33, 0.2);
 }
 
 .mobile-socials-item:not(:first-child)::before {    
@@ -132,13 +138,3 @@ margin-left: 10px;
 .mobile-nav-link.mobile-nav-current {
     color: #2196F3;
  }
-
-.mobile-nav .mobile-nav-link:hover,
-.mobile-nav .mobile-nav-link:focus {
-    color: #2196F3;
-}
-
-.mobile-contacts .mobile-contacts-link:hover,
-.mobile-contacts .mobile-contacts-link:focus {
-    color: #2196F3;
-}
